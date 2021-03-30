@@ -1,0 +1,117 @@
+.content-container {
+    // background-image: repeating-linear-gradient(90deg, #E7F5F6, #E7F5F6 80px, #D5EAEC 30px, #D5EAEC 100px);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0px;
+  
+    .card-box {
+      background: transparent;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 14px;
+      min-height: 300px;
+  
+      .tiles {
+        background: #F6F6F6;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 8px;
+  
+        .image-contaier {
+          padding-top: 3rem;
+          height: 50%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+  
+          img {
+            width: 5rem;
+            height: 5rem;
+          }
+        }
+        .label-container {
+          position: relative;
+  
+          .label {
+            text-align: center;
+          }
+  
+          .bottom-line {
+            height: .5rem;
+            background: #FFC13C;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            visibility: hidden;
+          }
+  
+          .start-btn {
+            font-size: 14px;
+            text-align: center;
+            visibility: hidden;
+  
+            .start-btn-logo {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  
+    .icon {
+      cursor: pointer;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .left-arrow-btn {
+      left: 0;
+      margin-left: 22%;
+      bottom: 17%;
+      position: absolute;
+    }
+    .right-arrow-btn {
+      right: 0;
+      margin-right: 22%;
+      bottom: 17%;
+      position: absolute;
+    }
+    .title-container {
+      font-family: 'Open-sans-light', 'arial', sans-serif;
+      top: 0;
+      position: absolute;
+      left: 0;
+      margin-left: 14.5%;
+      margin-top: 7%;
+      font-size: 1.8rem;
+      .sub-title {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+  
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .title-container {
+      visibility: hidden;
+    }
+    .left-arrow-btn {
+      margin-top: 0px !important;
+      margin-bottom: 9% !important;
+      bottom: 0 !important;
+    }
+    .right-arrow-btn {
+      margin-top: 0px !important;
+      margin-bottom: 9% !important;
+      bottom: 0 !important;
+    }
+  }
+  
